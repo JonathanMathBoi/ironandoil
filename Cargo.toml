@@ -5,4 +5,14 @@ edition = "2024"
 license = "AGPL-3.0-only"
 license-file = "LICENSE"
 
+[lints.rust]
+warnings = "deny"
+
+[lints.clippy]
+all = "deny"
+pedantic = "deny"
+nursery = "warn"
+
 [dependencies]
+axum = "0.8.8"
+tokio = { version = "1.49.0", features = ["full"] }
